@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Online Tic Tac Toe</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main>
+    <h1>❌ Tic Tac Toe ⭕</h1>
+    <p id="status" role="status">Create a room to start playing.</p>
+    <button id="create">Create a game</button>
+    <section id="game" hidden>
+      <p>You are <strong id="symbol">?</strong></p>
+      <label for="link">Share this link with your friend:</label>
+      <div class="share"><input id="link" readonly><button id="copy">Copy link</button></div>
+      <div id="board" class="board" aria-label="Tic Tac Toe board"></div>
+    </section>
+    <p class="help">Each game room supports two players. The server must stay online while you play.</p>
+  </main>
+  <script src="/static/game.js"></script>
+</body>
+</html>

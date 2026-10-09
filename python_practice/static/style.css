@@ -1,0 +1,11 @@
+* { box-sizing: border-box; }
+body { font-family: system-ui, sans-serif; background: #f2f5fa; color: #192333; margin: 0; }
+main { max-width: 500px; margin: 55px auto; padding: 30px; text-align: center; background: white; border-radius: 20px; box-shadow: 0 10px 35px #0001; }
+button { cursor: pointer; padding: 12px 16px; border: 0; border-radius: 10px; background: #3265dc; color: white; font-weight: 600; }
+button:disabled { opacity: .5; cursor: default; }
+.share { display: flex; gap: 8px; margin: 12px 0 24px; }
+.share input { min-width: 0; flex: 1; padding: 12px; border: 1px solid #bdc6d5; border-radius: 10px; }
+.board { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; max-width: 300px; margin: 24px auto; }
+.square { aspect-ratio: 1; font-size: 3rem; background: #e5ecfc; color: #163a8a; }
+.square:hover:not(:disabled) { background: #d2defa; }
+.help { font-size: .85rem; color: #627086; }
